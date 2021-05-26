@@ -1,7 +1,7 @@
-import tkinter as tk
-from tkinter import *
+#import tkinter as tk
+#from tkinter import *
 from pytube import YouTube
-from tkinter import messagebox, filedialog  
+from tkinter import messagebox, filedialog, Tk, Label, Entry, Button
 def Widgets():
     link_label = Label(root, 
                        text="YouTube link  :",
@@ -77,7 +77,7 @@ def Download():
     messagebox.showinfo("SUCCESSFULLY", 
                         "DOWNLOADED AND SAVED IN\n" 
                         + download_Folder)
-root = tk.Tk()
+root = Tk()
    
 root.geometry("480x120")
 root.resizable(False, False)
